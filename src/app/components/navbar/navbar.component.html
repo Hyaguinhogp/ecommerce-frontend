@@ -1,0 +1,24 @@
+<nav>
+	<div class="default-container">
+		<div class="default-content mobile">
+			<h2 class="logo">LOGO HERE</h2>
+			<img class="menu-icon" src="../../../assets/menu.svg" alt="">
+		</div>
+		
+		<div class="default-content desktop">
+			<h2 class="logo">LOGO HERE</h2>
+			<app-search />
+			<div class="icons-container">
+				<img src="../../../assets/user.svg" alt="">
+				<img src="../../../assets/cart.svg" alt="">
+			</div>
+		</div>
+
+		<div class="default-content navbar-categories">
+			<ng-container *ngFor="let category of navbarCategories; index as i">
+				<p>{{category}}</p>
+				<div *ngIf="i != navbarCategories.length - 1" class="categories-detail"></div>
+			</ng-container>
+		</div>
+	</div>
+</nav>

@@ -1,0 +1,94 @@
+:root {
+	--column-width: 0px;
+	--space-width: 20px;
+
+	--theme-00: #E5E7ED;
+	--theme-01: #D9DBE0;
+	--theme-02: #D5D8E2;
+	--theme-03: #999999;
+
+	--black-00: #1D1F21;
+	--black-01: #34383C;
+
+	--family-00: 'Lexend', sans-serif;
+	--family-01: 'Public Sans', sans-serif;
+
+	--gray-00: #F2F2F2;
+	--gray-01: #E5E5E5;
+	--gray-02: #CCC;
+	--gray-03: #77787A;
+
+	--font-00: 90px;
+	--font-01: 60px;
+	--font-02: 24px;
+	--font-03: 20px;
+	--font-04: 16px;
+	--font-05: 12px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body, ::placeholder, :focus {
+	max-width: 100vw;
+	line-height: 1;
+	font-family: var(--family-00);
+	color: var(--black-00);
+	background-color: var(--theme-00);
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.default-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.default-content {
+    width: 100%;
+    max-width: 1200px;
+}
