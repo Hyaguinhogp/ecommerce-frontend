@@ -1,3 +1,6 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
 :root {
 	--column-width: 0px;
 	--space-width: 20px;
