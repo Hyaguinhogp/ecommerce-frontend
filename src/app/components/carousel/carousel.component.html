@@ -1,20 +1,26 @@
 <div class="default-container">
 	<div class="default-content">
-		<!-- <ng-container *ngFor="let item of images; let i = index">
-			<div 
-				class="carousel-image"
-				[ngStyle]="{'background-image': 'url(' + item + ')'}"
-			>
-			</div>
-		</ng-container> -->
 		<div 
 			class="carousel-image"
 			[ngStyle]="{'background-image': 'url(' + images[currentIndex] + ')'}"
-		></div>
+			>
+				<div class="buttons">
+					<button (click)="prev()">
+						<img src="../../../assets/left.svg" alt="">
+					</button>
+					<button (click)="next()">
+						<img src="../../../assets/left.svg" alt="">
+					</button>
+				</div>
 
-		<div class="buttons">
-			<button (click)="prev()">anterior</button>
-			<button (click)="next()">próximo</button>
-		</div>
+				<div class="selectors">
+					<div 
+						*ngFor="let item of images; index as i" 
+						class="selector"
+						[ngClass]="i == currentIndex ? 'selected' : ''"
+						(click)="jumpTo(i)"
+					></div>
+				</div>
+			</div>
 	</div>
 </div>
