@@ -1,0 +1,38 @@
+.default-container {
+	padding-top: 50px;
+}
+
+.default-content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.categories {
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	gap: 20px
+}
+
+.category {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	padding-bottom: 10px;
+}
+
+.category-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-color: var(--theme-02);
+}
+
+.category-name {
+	font-size: var(--font-04);
+}
