@@ -1,0 +1,26 @@
+<div class="default-container">
+	<div class="default-content">
+		<div 
+			class="carousel-image"
+			[ngStyle]="{'background-image': 'url(' + images[currentIndex] + ')'}"
+			>
+				<div class="buttons">
+					<button (click)="prev()">
+						<img src="../../../assets/left.svg" alt="">
+					</button>
+					<button (click)="next()">
+						<img src="../../../assets/left.svg" alt="">
+					</button>
+				</div>
+
+				<div class="selectors">
+					<div 
+						*ngFor="let item of images; index as i" 
+						class="selector"
+						[ngClass]="i == currentIndex ? 'selected' : ''"
+						(click)="jumpTo(i)"
+					></div>
+				</div>
+			</div>
+	</div>
+</div>

@@ -1,0 +1,64 @@
+.default-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.carousel-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 100%;
+	height: 700px;
+	padding: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 0.5s ease-in-out;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.buttons button:nth-child(2) {
+	transform: rotate(180deg);
+}
+
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--gray-00);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.selectors {
+	display: flex;
+	gap: 10px;
+}
+
+.selector {
+	width: 15px;
+	height: 15px;
+	border-radius: 8px;
+	background-color: var(--gray-02);
+	transition: all 0.1s ease-in-out;
+}
+
+.selected {
+	background-color: var(--gray-00);
+	width: 30px;
+}
+
+@media (min-width: 1200px) {
+	.carousel-image {
+		height: 530px;
+	}
+}
