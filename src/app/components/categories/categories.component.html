@@ -1,0 +1,14 @@
+<div class="default-container">
+	<div class="default-content">
+		<h2 class="subtitle">Categorias</h2>
+		<div class="categories">
+			<div *ngFor="let category of categories" class="category">
+				<div 
+					[ngStyle]="{ 'background-image': 'url(' + category.img + ')'}" 
+					class="category-image"
+				></div>
+				<h2 class="category-name">{{category.name}}</h2>
+			</div>
+		</div>
+	</div>
+</div>

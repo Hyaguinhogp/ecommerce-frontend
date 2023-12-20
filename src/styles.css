@@ -95,3 +95,8 @@ table {
     width: 100%;
     max-width: 1200px;
 }
+
+.subtitle {
+	font-size: var(--font-02);
+	font-weight: 600;
+}
